@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: bankApp
+  config:
+    import: "optional:configserver:http://localhost:8080/" 
+  profiles:
+    active: dev    
+
+server:
+  port: 8081
